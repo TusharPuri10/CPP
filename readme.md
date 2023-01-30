@@ -3,5 +3,5 @@
 * Basics
 * DataStructures
 * FileHandling
-* STL
 * OOPs
+* STL
