@@ -8,7 +8,7 @@ int main()
     for(int i=0;i<size;i++)
         cin>>a[i];
     
-    //linear search
+    //linear Search
     int num;
     cin>>num;
     int no_of_searches = 0;
