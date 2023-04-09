@@ -48,5 +48,6 @@ int main()
             cin>>arr[i];
         
         selectionsort(arr,size);
+        delete arr;
     }
 }

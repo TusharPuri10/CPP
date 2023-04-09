@@ -57,5 +57,6 @@ int main()
             cin>>arr[i];
 
         fun(arr,size);
+        delete arr;
     }
 }

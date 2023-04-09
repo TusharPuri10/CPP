@@ -41,5 +41,6 @@ int main()
             cin>>arr[i];
         
         insertionsort(arr,size);
+        delete arr;
     }
 }

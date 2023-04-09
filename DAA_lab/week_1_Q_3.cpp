@@ -56,6 +56,7 @@ int main()
         int key;
         cin>>key;
         jumpSearch(arr,size,key);
+        delete arr;
     }
 }
 

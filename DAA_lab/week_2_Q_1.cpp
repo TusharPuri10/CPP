@@ -77,5 +77,6 @@ int main()
         int key;
         cin>>key;
         binarySearch(arr,size,key);
+        delete arr;
     }
 }

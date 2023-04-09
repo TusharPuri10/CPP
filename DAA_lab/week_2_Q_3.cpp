@@ -61,5 +61,6 @@ int main()
         int key;
         cin>>key;
         cout<<getpairs(arr,size,key)<<endl;
+        delete arr;
     }
 }

@@ -70,6 +70,6 @@ int main()
         cout<<"comparison-"<<comparison<<endl;
         cout<<"swaps-"<<swaps<<endl;
 
-
+        delete arr;
     }
 }

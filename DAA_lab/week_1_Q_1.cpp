@@ -38,6 +38,7 @@ int main()
         int key;
         cin>>key;
         linearSearch(arr,size,key);
+        delete arr;
     }
     return 0;
 }

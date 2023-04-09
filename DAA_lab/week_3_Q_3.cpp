@@ -72,6 +72,7 @@ int main()
             }
         }
         cout<<"NO"<<endl;
-        end:{}
+        end:
+        delete arr;
     }
 }

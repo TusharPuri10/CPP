@@ -74,6 +74,6 @@ int main()
         cout<<"comparison-"<<comparison<<endl;
         cout<<"inversion-"<<inversion<<endl;
 
-
+        delete arr;
     }
 }
