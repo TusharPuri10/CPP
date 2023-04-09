@@ -21,6 +21,8 @@ int partition(int* arr,int left,int right,int &comparison,int& swaps)
     int i=left-1;
     int j=left;
 
+    int random = left + rand()%(right-left+1);
+    swap(arr[random],arr[right]);
     while(j<=right)
     {
         ++comparison;
