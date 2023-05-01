@@ -33,7 +33,7 @@ void jumpSearch(int *arr, int size, int key)
     {
         if(arr[i]==key)
         {
-            cout<<"Found at position "<<k<<endl;
+            cout<<"Found at position "<<i<<endl;
             flag=1;
         }
     }

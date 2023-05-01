@@ -18,9 +18,9 @@ void linearSearch(int* arr, int size, int key)
         }
     }
     if(flag==0)
-        cout<<"Not Present "<<comparisons<<endl;
+        cout<<"Not Present "<<endl;
     else
-        cout<<"Present "<<comparisons<<endl;
+        cout<<"Present at index: "<<comparisons<<endl;
 
 }
 int main()
@@ -30,14 +30,17 @@ int main()
     while(testcases--)
     {
         int size;
+        cout<<"size: ";
         cin>>size;
         int* arr = new int[size];
         for(int i=0;i<size;i++)
             cin>>arr[i];
         
         int key;
+        cout<<"key: ";
         cin>>key;
         linearSearch(arr,size,key);
+        cout<<"\n";
         delete arr;
     }
     return 0;
