@@ -8,6 +8,7 @@
 //QUICK SORT
 
 #include<iostream>
+#include<chrono>
 using namespace std;
 
 void swap(int& a, int& b)
@@ -48,27 +49,33 @@ void quicksort(int* arr, int left, int right,int& comparison,int& swaps)
 }
 int main()
 {
-    int testcases;
-    cin>>testcases;
-    while(testcases--)
+    // int testcases;
+    // cin>>testcases;
+    // while(testcases--)
+    for(int i=10;i<=1000;i+=10)
     {
-        int size;
-        cin>>size;
+        int size=i;
+        // cin>>size;
         int* arr = new int[size];
         for(int i=0;i<size;i++)
-            cin>>arr[i];
+            arr[i]=rand()%size;
+            // cin>>arr[i];
         
         int comparison=0;
         int swaps=0;
 
+        auto start = chrono::high_resolution_clock::now();
         quicksort(arr,0,size-1,comparison,swaps);
+        auto end = chrono::high_resolution_clock::now();
+        auto time = chrono::duration_cast<chrono::nanoseconds>(end - start).count();
+        cout<<time<<"-"<<size<<endl;
 
-        for(int i=0;i<size;i++)
-            cout<<arr[i]<<" ";
-        cout<<endl;
+        // for(int i=0;i<size;i++)
+        //     cout<<arr[i]<<" ";
+        // cout<<endl;
 
-        cout<<"comparison-"<<comparison<<endl;
-        cout<<"swaps-"<<swaps<<endl;
+        // cout<<"comparison-"<<comparison<<endl;
+        // cout<<"swaps-"<<swaps<<endl;
 
         delete arr;
     }

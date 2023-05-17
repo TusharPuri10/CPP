@@ -4,6 +4,7 @@
 
 
 #include<iostream>
+#include <chrono>x
 using namespace std;
 void binarySearch(int* arr, int size, int key)
 {
